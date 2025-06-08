@@ -13,6 +13,8 @@
 
 use std::fmt::Display;
 use crate::deck;
+use crate::jokers::*;
+
 
 // won = false,
 // round_scores = {
@@ -355,11 +357,6 @@ pub struct GameState {
 }
 
 
-
-#[derive(Debug)]
-struct Joker {
-    
-}
 
 impl GameState {
     const fn init_hands() -> HandLevels {
